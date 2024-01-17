@@ -1,48 +1,3 @@
-<!-- Carousel 1 -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-<script>
-$( document ).ready(function() {
-
-$('#coll-list-1').slick({
-  dots: true,
-  speed: 1000,
-  infinite: true,
-  slidesToShow: 2,
-  slidesToScroll: 1,
-  arrows: false,
-  autoplay: false,
-  autoplaySpeed: 4000,
-  responsive: [
-    {
-      // tablet
-      breakpoint: 991,
-      settings: {
-        slidesToShow: 2
-      }
-    },
-    {
-      // mobile portrait
-      breakpoint: 479,
-      settings: {
-        slidesToShow: 1
-      }
-    }
-  ]
-});
-
-$('.res-car-arr-b-l').click(function(){
-    $(this).closest('.res-car-cont-w').find(".wp-coll-list-2").slick('slickPrev');
-});
-
-$('.res-car-arr-b-r').click(function(){
-    $(this).closest('.res-car-cont-w').find(".wp-coll-list-2").slick('slickNext');
-});
-
-});
-
-</script>
-<script type="text/javascript">
 url = 'https://api.lever.co/v0/postings/Zowie?mode=json'
 
 var pageUrl = window.location.href;
@@ -186,4 +141,3 @@ inputTerm.value = term
 inputCampaign.value = campaign
 }
 
-</script>
