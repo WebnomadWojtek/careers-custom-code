@@ -89,7 +89,7 @@ $("#jobs-container").on("click", ".job", function() {
     var link = $(this).data("link");
     window.location.href = link;
 });
-
+Webflow.ready();
 
 setTimeout(passUTMs, 5000)
 
